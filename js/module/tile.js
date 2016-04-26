@@ -39,18 +39,14 @@ Tile.prototype._initDiv = function () {
  */
 Tile.prototype.requestSvg = function () {
 
-    var scope = this;
+    var svgTemplate = [
+        '<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="' +
+        TILE_WIDTH + '" height="' + TILE_HEIGHT + '">',
+        '<ellipse cx="50%" cy="50%" rx="50%" ry="50%" fill="#' + this._color + '"></ellipse>',
+        '</svg>'
+    ].join('');
 
-    requestTileSvg(this._color, function (data) {
-        scope.setSvgContext(data);
-    }, function (error) {
-
-        setTimeout(function () {
-            scope.requestSvg();
-        }, 4000);
-
-        console.error(error);
-    });
+    this.setSvgContext(svgTemplate);
 };
 
 Tile.prototype.setSvgContext = function (htmlData) {
