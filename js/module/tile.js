@@ -34,10 +34,7 @@ Tile.prototype._initDiv = function () {
     this._div = document.createElement('div');
 }
 
-/**
- * use ajax to get the svg template
- */
-Tile.prototype.requestSvg = function () {
+Tile.prototype.generateSvg = function () {
 
     var svgTemplate = [
         '<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="' +

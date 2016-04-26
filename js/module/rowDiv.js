@@ -36,12 +36,11 @@ RowDiv.prototype._initTile = function (tile) {
         scope.oneTileReady();
     }
 
-    tile.requestSvg();
+    tile.generateSvg();
 }
 
 /**
  * tile data all set
- * if tile ajax request all succeed
  * then draw on canvas
  */
 RowDiv.prototype.ready = function () {
