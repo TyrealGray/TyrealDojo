@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="js/mosaic.js"></script>
+    <script type="text/javascript" src="js/agent/tileAgent.js"></script>
+    <script type="text/javascript" src="js/module/tile.js"></script>
+    <script type="text/javascript" src="js/module/rowDiv.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    <title>Mosaic</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+    <div>
+        select a local image file
+        <input id="pictureInput" type="file" accept="image/*">
+    </div>
+
+    <canvas id="renderView"></canvas>
+
+    <script type="text/javascript">
+    
+        var app = new App();
+        
+        app.init({
+            fileInputID:'pictureInput',
+            canvasID:'renderView'
+        });
+        
+    </script>
+</body>
+
+</html>
