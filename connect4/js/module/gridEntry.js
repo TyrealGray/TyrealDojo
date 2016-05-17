@@ -13,10 +13,10 @@ class GridEntry {
     }
 
     initSprite() {
-        this._emptyTexture = PIXI.Texture.fromImage('/connect4/resource/gridEntry.png');
+        this._emptyTexture = PIXI.Texture.fromImage('./TyrealDojo/connect4/resource/gridEntry.png');
 
-        this._redPieceTexture = PIXI.Texture.fromImage('/connect4/resource/redpiece.png');
-        this._bluePieceTexture = PIXI.Texture.fromImage('/connect4/resource/bluepiece.png');
+        this._redPieceTexture = PIXI.Texture.fromImage('./TyrealDojo/connect4/resource/redpiece.png');
+        this._bluePieceTexture = PIXI.Texture.fromImage('./TyrealDojo/connect4/resource/bluepiece.png');
 
         let gridEntry = new PIXI.Sprite(this._emptyTexture);
         this._sprite = gridEntry;
