@@ -15,7 +15,7 @@ class Grid {
     }
     
     initSprite() {
-        let gridSprite = PIXI.Sprite.fromImage('./TyrealDojo/connect4/resource/grid.png');
+        let gridSprite = PIXI.Sprite.fromImage('/TyrealDojo/connect4/resource/grid.png');
         this._sprite = gridSprite;
     }
     
@@ -36,8 +36,8 @@ class Grid {
             return;
         }
         
-        let redPieceTexture = PIXI.Texture.fromImage('./TyrealDojo/connect4/resource/redpiece.png');
-        let bluePieceTexture = PIXI.Texture.fromImage('./TyrealDojo/connect4/resource/bluepiece.png');
+        let redPieceTexture = PIXI.Texture.fromImage('/TyrealDojo/connect4/resource/redpiece.png');
+        let bluePieceTexture = PIXI.Texture.fromImage('/TyrealDojo/connect4/resource/bluepiece.png');
         
         let pieceSprite = null;
 
