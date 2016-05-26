@@ -1,5 +1,5 @@
-# mosaic
-Code dojo, mosaic an image
+# TyrealDojo
+Javascript dojo
 
 You can find original topic in DOJO-xxxx if there is one 
 
