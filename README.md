@@ -16,5 +16,7 @@ connect4 dojo
 **[connect4 unit test page](http://tyrealgray.github.io/TyrealDojo/connect4/test-connect4.html)**
 
 terrain dojo
-**[terrain dojo page](http://http://tyrealgray.github.io/TyrealDojo/terrain/terrain.html)**
-**[terrain unit test page](http://http://tyrealgray.github.io/TyrealDojo/terrain/test-terrain.html)**
+
+**[terrain dojo page](http://tyrealgray.github.io/TyrealDojo/terrain/terrain.html)**
+
+**[terrain unit test page](http://tyrealgray.github.io/TyrealDojo/terrain/test-terrain.html)**
