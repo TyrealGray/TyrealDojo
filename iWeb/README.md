@@ -13,3 +13,17 @@
 
 6.click save and go into the template folder and double click index.html to check it out :)
 
+### How to start development:
+1. run `npm run init`
+
+2. then `npm run start-mac` or `npm run start-win` to begin hacking iWeb :)
+
+### Docs
+run `npm run jsdoc` to create docs locally
+
+#### small issue
+`Coming Soon` template is not show background picture in iWeb, I guess it is because of app's permission
+
+Didn't implement `<a>` tag url changing feature because of basically it's the same logic as changing `<a>` content
+
+Not support Linux, but it is very likely could be supported

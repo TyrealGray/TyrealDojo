@@ -12,7 +12,9 @@
     "partitions": [
       {
         "name": "trusted",
-        "accessible_resources": ["<all_urls>"]
+        "accessible_resources": [
+          "<all_urls>"
+        ]
       }
     ]
   },
