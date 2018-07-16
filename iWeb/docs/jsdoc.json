@@ -1,8 +1,0 @@
-{
-  "plugins": ["node_modules/jsdoc-babel"],
-  "babel": {
-    "babelrc": false,
-    "presets": ["flow"],
-    "plugins": ["transform-class-properties", "babel-plugin-transform-object-rest-spread"]
-  }
-}
