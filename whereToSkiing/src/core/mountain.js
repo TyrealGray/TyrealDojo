@@ -21,17 +21,20 @@ export default class Mountain {
 
     addHillInfo(hill: Hill) {
         if (this._hillNumber % this._size.width === NEW_ROW) {
-            if (this._hillNumber !== 0) {
-                this.compareNorthHillWith(hill);
-            }
 
             this._terrain.push([hill]);
+
+            if (this._hillNumber >= this._size.width) {
+                this.compareNorthHillWith(hill);
+            }
         } else {
-            if (this._hillNumber > this._size.width) {
+            this._terrain[this._terrain.length - 1].push(hill);
+
+            if (this._hillNumber >= this._size.width) {
                 this.compareNorthHillWith(hill);
             }
             this.compareWestHillWith(hill);
-            this._terrain[this._terrain.length - 1].push(hill);
+
         }
 
         this._hillNumber++;
@@ -42,7 +45,6 @@ export default class Mountain {
     }
 
     compareWestHillWith(hill: Hill) {
-
         const westHill = this._terrain[this._terrain.length - 1][this._hillNumber % this._size.width - 1];
 
         if (westHill.getHeight() > hill.getHeight()) {
@@ -53,7 +55,8 @@ export default class Mountain {
     }
 
     compareNorthHillWith(hill: Hill) {
-        const northHill = this._terrain[this._terrain.length - 1][0];
+        const northHill =  this._terrain[this._terrain.length - 2][this._terrain[this._terrain.length - 1].length - 1];
+
         if (northHill.getHeight() > hill.getHeight()) {
             northHill.setSkiingDownPath(hill);
         } else if(northHill.getHeight() < hill.getHeight()){
