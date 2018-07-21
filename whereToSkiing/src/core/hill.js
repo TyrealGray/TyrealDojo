@@ -12,7 +12,6 @@ export default class Hill {
     _drop: number;
     _steepestDrop: number;
     _steepestDropHill: Hill;
-    _highestHill: Hill;
 
     constructor(props: HillPropsType) {
         this._height = props.height;
@@ -23,7 +22,6 @@ export default class Hill {
         this._drop = 0;
         this._steepestDrop = 0;
         this._steepestDropHill = this;
-        this._highestHill = this;
     }
 
     setSkiingDownPath(hill: Hill) {
@@ -67,19 +65,7 @@ export default class Hill {
         if(newSteepestDrop > this.getSteepestDrop()){
             this._steepestDropHill = hill.getSteepestDropHill();
             this._steepestDrop = newSteepestDrop;
-
-            if(this._steepestDropHill.getHighestHill().getSteepestDrop() < this.getSteepestDrop()){
-                this._steepestDropHill.setHighestHill(this);
-            }
         }
-    }
-
-    setHighestHill(hill: Hill) {
-        this._highestHill = hill;
-    }
-
-    getHighestHill(): Hill {
-        return this._highestHill;
     }
 
     getSteepestDropHill(): Hill {

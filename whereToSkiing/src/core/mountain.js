@@ -37,13 +37,17 @@ export default class Mountain {
         this._hillNumber++;
     }
 
+    getTerrain(): Array<Array<Hill>>{
+        return this._terrain;
+    }
+
     compareWestHillWith(hill: Hill) {
 
         const westHill = this._terrain[this._terrain.length - 1][this._hillNumber % this._size.width - 1];
 
         if (westHill.getHeight() > hill.getHeight()) {
             westHill.setSkiingDownPath(hill);
-        } else {
+        } else if(westHill.getHeight() < hill.getHeight()) {
             hill.setSkiingDownPath(westHill);
         }
     }
@@ -52,7 +56,7 @@ export default class Mountain {
         const northHill = this._terrain[this._terrain.length - 1][0];
         if (northHill.getHeight() > hill.getHeight()) {
             northHill.setSkiingDownPath(hill);
-        } else {
+        } else if(northHill.getHeight() < hill.getHeight()){
             hill.setSkiingDownPath(northHill);
         }
     }

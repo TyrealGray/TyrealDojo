@@ -6,13 +6,17 @@ describe('Hill', () => {
     let hill10 = null,
         downHill8 = null,
         downHill4 = null,
-        downHill3 = null;
+        downHill3 = null,
+        downHill2 = null,
+        downHill1 = null;
 
     beforeEach(() => {
         hill10 = new Hill({height: 10});
         downHill8 = new Hill({height: 8});
         downHill4 = new Hill({height: 4});
         downHill3 = new Hill({height: 3});
+        downHill2 = new Hill({height: 2});
+        downHill1 = new Hill({height: 1});
     });
 
     afterEach(() => {
@@ -128,12 +132,23 @@ describe('Hill', () => {
         expect(hill10.getSteepestDrop()).to.be(2);
         expect(hill10.getSteepestDropHill().getHeight()).to.be(8);
         expect(downHill8.getSteepestDropHill().getHeight()).to.be(8);
-        expect(downHill8.getHighestHill().getHeight()).to.be(10);
 
         downHill8.setSkiingDownPath(downHill4);
         expect(hill10.getSteepestDrop()).to.be(6);
         expect(downHill8.getSteepestDrop()).to.be(4);
         expect(hill10.getSteepestDropHill().getHeight()).to.be(4);
-        expect(downHill4.getHighestHill().getHeight()).to.be(10);
+    });
+
+    it('hill10 downHill8 downHill4 downHill3 downHill2 downHill1 teepest drop should be correct', () => {
+        downHill4.setSkiingDownPath(downHill3);
+        downHill3.setSkiingDownPath(downHill2);
+        downHill2.setSkiingDownPath(downHill1);
+
+        downHill8.setSkiingDownPath(downHill4);
+        hill10.setSkiingDownPath(downHill8);
+
+        expect(hill10.getSteepestDrop()).to.be(9);
+        expect(downHill8.getSteepestDrop()).to.be(7);
+        expect(hill10.getSteepestDropHill().getHeight()).to.be(1);
     });
 });
