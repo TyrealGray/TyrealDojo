@@ -1,0 +1,18 @@
+.Product {
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    margin: 5px;
+    min-width: 180px;
+    max-width: 200px;
+    min-height: 350px;
+    max-height: 350px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.Product > .Image, .Label {
+    cursor: pointer;
+}

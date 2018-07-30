@@ -1,0 +1,13 @@
+.Button {
+    cursor: pointer;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 5px;
+    max-height: 40px;
+    max-width: 120px;
+    border: 1px solid black;
+}
+.Button > .Label {
+    cursor: pointer;
+}

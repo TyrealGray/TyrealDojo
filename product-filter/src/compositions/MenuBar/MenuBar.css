@@ -1,0 +1,8 @@
+.MenuBar {
+    box-shadow: 10px 2px 2px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #94bce4;
+    border: 1px solid black;
+}

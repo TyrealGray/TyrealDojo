@@ -1,0 +1,7 @@
+.ProductList {
+    flex: 1;
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    padding: 5px 0 0 5px;
+}
