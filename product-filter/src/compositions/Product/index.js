@@ -10,9 +10,6 @@ import Image from "../../components/Image/index";
 import './Product.css';
 
 class Product extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     onClickAddToCartButton(e) {
         e.stopPropagation();

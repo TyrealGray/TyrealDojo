@@ -8,9 +8,6 @@ import './MenuBar.css';
 import * as pageNames from '../../store/pageNames';
 
 class MenuBar extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     onClickCartButton(e) {
         this.props.clickCartButton(e);

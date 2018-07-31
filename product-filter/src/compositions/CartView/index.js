@@ -6,9 +6,6 @@ import ProductList from '../ProductList';
 import './CartView.css';
 
 class CartView extends Component {
-    constructor(props){
-        super(props);
-    }
 
     render(){
         return (

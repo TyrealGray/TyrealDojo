@@ -6,9 +6,6 @@ import Product from "../Product/index";
 import './ProductList.css';
 
 export default class ProductList extends Component {
-    constructor(props){
-        super(props);
-    }
 
     renderProduct(itemData, index){
         return (

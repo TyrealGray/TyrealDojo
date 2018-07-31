@@ -10,9 +10,6 @@ import Button from "../../components/Button";
 import './ProductDetailView.css';
 
 class ProductDetailView extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
 

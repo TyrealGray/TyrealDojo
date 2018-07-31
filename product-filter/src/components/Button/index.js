@@ -3,9 +3,6 @@ import Label from "../Label/index";
 import './Button.css';
 
 export default class Button extends Component {
-    constructor(props){
-        super(props);
-    }
 
     onClick(e) {
         e.preventDefault();

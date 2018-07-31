@@ -9,9 +9,6 @@ import Label from "../../components/Label/index";
 import './FilterPanel.css';
 
 class FilterPanel extends Component{
-    constructor(props){
-        super(props);
-    }
 
     onTrigger(name, isChecked){
         switch (name) {
