@@ -8,7 +8,6 @@ import Button from "../../components/Button/index";
 import Image from "../../components/Image/index";
 
 import './Product.css';
-import * as pageNames from '../../store/pageNames';
 
 class Product extends Component {
     constructor(props) {

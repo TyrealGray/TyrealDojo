@@ -24,7 +24,5 @@ export default connect(
         filterStatus: state.filterStatus,
     }),
     dispatch => ({
-        // clickCartButton: e => dispatch(menuBarActions.clickCartButton(e)),
-        // clickBrowseButton: e => dispatch(menuBarActions.clickBrowseButton(e)),
     })
 )(CartView);

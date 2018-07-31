@@ -1,0 +1,51 @@
+.ProductDetailView {
+    flex: 1;
+    display: flex;
+    background-color: #cbe0f3;
+    flex-direction: column;
+}
+
+.ProductDetailView-title {
+    flex: 0.3;
+    margin: 50px;
+    font-size: xx-large;
+}
+
+.ProductDetailView-detail {
+    flex: 3;
+    margin: 0 50px 0 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ProductDetailView-description {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    max-width: 250px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.ProductDetailView-description > .Label:first-child {
+    font-size: xx-large;
+}
+
+.ProductDetailView-description > .Label:nth-child(2) {
+    font-size: x-large;
+}
+
+.ProductDetailView-description > .Label {
+    margin: 10px 0 10px 0;
+    text-align:left;
+    text-justify:inter-ideograph;
+}
+
+.ProductDetailView-description > .Button {
+    flex: 1;
+    align-self: center;
+    bottom: 0;
+    width: 250px;
+    max-width: 250px;
+    margin-top: 50px;
+}

@@ -8,7 +8,7 @@ export default class Label extends Component {
 
     render(){
         return (
-            <label className='Label'>
+            <label className={this.props.className? this.props.className :'Label'}>
                 {this.props.children}
             </label>
         );

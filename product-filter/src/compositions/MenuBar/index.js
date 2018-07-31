@@ -5,7 +5,6 @@ import Button from '../../components/Button';
 import * as menuBarActions from '../../actions/menuBarActions';
 
 import './MenuBar.css';
-
 import * as pageNames from '../../store/pageNames';
 
 class MenuBar extends Component {

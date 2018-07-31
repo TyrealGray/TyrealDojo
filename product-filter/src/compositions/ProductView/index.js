@@ -15,7 +15,7 @@ class ProductView extends Component {
         return (
             <div className='ProductView'>
                 <FilterPanel/>
-                <ProductList data={this.props.filterStatus.productData}/>
+                <ProductList data={this.props.filterStatus.filterData}/>
             </div>
         );
     }
@@ -26,7 +26,5 @@ export default connect(
         filterStatus: state.filterStatus,
     }),
     dispatch => ({
-        // clickCartButton: e => dispatch(menuBarActions.clickCartButton(e)),
-        // clickBrowseButton: e => dispatch(menuBarActions.clickBrowseButton(e)),
     })
 )(ProductView);
