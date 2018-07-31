@@ -1,7 +1,7 @@
 {
   "name": "product-filter",
   "version": "0.1.0",
-  "homepage" : "http://tyrealgray.github.io/product-filter",
+  "homepage": "http://tyrealgray.github.io/product-filter",
   "private": true,
   "dependencies": {
     "react": "^16.4.1",

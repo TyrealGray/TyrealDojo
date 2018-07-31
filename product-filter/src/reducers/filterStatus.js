@@ -2,6 +2,9 @@ import * as types from '../actions/actionTypes';
 
 import * as products from '../store/products';
 
+/**
+ * reducer for managing filter checkbox input data
+ */
 const initialState = {
     productData: products.productData,
     filterData: products.productData,

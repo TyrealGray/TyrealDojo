@@ -7,18 +7,18 @@ import './ProductList.css';
 
 export default class ProductList extends Component {
 
-    renderProduct(itemData, index){
+    renderProduct(itemData, index) {
         return (
-            <Product key={index} data={itemData} />
+            <Product key={index} data={itemData}/>
         );
     }
 
-    render(){
+    render() {
         return (
             <div className='ProductList'>
-            <ListView data={this.props.data} onRenderItem={(itemData, index)=>{
-                return this.renderProduct(itemData, index);
-            }}/>
+                <ListView data={this.props.data} onRenderItem={(itemData, index) => {
+                    return this.renderProduct(itemData, index);
+                }}/>
             </div>
         );
     }

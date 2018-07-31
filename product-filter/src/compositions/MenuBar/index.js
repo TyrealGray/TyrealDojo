@@ -24,6 +24,9 @@ class MenuBar extends Component {
         const cartNumber = this.props.filterStatus.cartData.length;
 
         if(cartNumber){
+            /**
+             * show number of products which added into cart
+             */
             cartNumberString = `(${cartNumber})`;
         }
         const cartButton = (<Button key={'Cart'} style={{flex: 0.2, backgroundColor: '#de6768'}}
@@ -31,6 +34,7 @@ class MenuBar extends Component {
 
         const browseButton = (<Button key={'Browse'} style={{flex: 0.2, backgroundColor: '#d1e4f4'}}
                                       onClick={this.onClickBrowseButton.bind(this)}>Browse</Button>);
+
         if (name === pageNames.BROWSE_PAGE) {
             buttons.push(cartButton);
         } else if (name === pageNames.CART_PAGE) {

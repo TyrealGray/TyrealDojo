@@ -2,6 +2,9 @@ import * as types from '../actions/actionTypes';
 
 import * as pageNames from '../store/pageNames';
 
+/**
+ * reducer for managing show different page
+ */
 const initialState = {
   name: pageNames.BROWSE_PAGE
 };

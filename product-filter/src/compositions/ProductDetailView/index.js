@@ -18,9 +18,13 @@ class ProductDetailView extends Component {
         return (
             <div className='ProductDetailView'>
                 <Label className='ProductDetailView-title'>{productData.name}</Label>
+
                 <div className='ProductDetailView-detail'>
+
                     <Image width={400} height={400} src={productData.imgSrc}/>
+
                     <div className='ProductDetailView-description'>
+
                         <Label>{productData.size}</Label>
                         <Label>{`$${productData.price}`}</Label>
                         <Label style={{padding: '5px'}}>
@@ -28,13 +32,16 @@ class ProductDetailView extends Component {
                             All natural, with no added preservatives and reduced in sugar,
                             ${productData.name} is the great-tasting, 'healthier-choice'.`}
                         </Label>
+
                         <Button style={{backgroundColor: '#de6768'}} onClick={() => {
                             this.props.clickAddToCartButton(productData);
                         }}>
                             Add To Cart
                         </Button>
                     </div>
+
                 </div>
+
             </div>
         );
     }
