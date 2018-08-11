@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DataMap</title>
+    <link rel="stylesheet" href="css/ol.css" type="text/css">
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        #view {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #map {
+            overflow: hidden;
+            flex: 9;
+        }
+
+        #interface {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<div id="view">
+    <div id="map"></div>
+    <div id="interface">
+        query mode:
+        <select id="queryMode">
+            <option value="STATUS_POINT">point</option>
+            <option value="STATUS_NEAR">around</option>
+            <option value="STATUS_AREA">area</option>
+        </select>
+        <div>
+            today status:
+            <div id="todayStatus"></div>
+        </div>
+    </div>
+</div>
+
+<script src="./dataMap.js" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "datamap",
+  "version": "1.0.0",
+  "description": "play with map",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tyreal Gray",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.6.0",
+    "babel-register": "6.26.0",
+    "webpack": "3.6.0",
+    "webpack-dev-server": "2.7.1"
+  },
+  "dependencies": {
+    "ol": "^5.1.3"
+  }
+}
