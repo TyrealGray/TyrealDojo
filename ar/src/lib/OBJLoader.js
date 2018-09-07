@@ -720,30 +720,36 @@ THREE.OBJLoader.prototype = {
 
             // Create mesh
 
-            //var mesh;
-
-            if ( createdMaterials.length > 1 ) {
-
-                for ( var mi = 0, miLen = materials.length; mi < miLen ; mi++ ) {
-
-                    var sourceMaterial = materials[mi];
-                    buffergeometry.addGroup( sourceMaterial.groupStart, sourceMaterial.groupCount, mi );
-
-                }
-
-                //mesh = ( ! isLine ? new THREE.Mesh( buffergeometry, createdMaterials ) : new THREE.LineSegments( buffergeometry, createdMaterials ) );
-
-            } else {
-
-                //mesh = ( ! isLine ? new THREE.Mesh( buffergeometry, createdMaterials[ 0 ] ) : new THREE.LineSegments( buffergeometry, createdMaterials[ 0 ] ) );
-            }
-
-            buffergeometry.computeFaceNormals();
-            buffergeometry.computeVertexNormals();
-
+            // var mesh;
+            //
+            // if ( createdMaterials.length > 1 ) {
+            //
+            //     for ( var mi = 0, miLen = materials.length; mi < miLen ; mi++ ) {
+            //
+            //         var sourceMaterial = materials[mi];
+            //         buffergeometry.addGroup( sourceMaterial.groupStart, sourceMaterial.groupCount, mi );
+            //
+            //     }
+            //
+            //     buffergeometry.computeFaceNormals();
+            //     buffergeometry.computeVertexNormals();
+            //
+            //     mesh = ( ! isLine ? new THREE.Mesh( buffergeometry, createdMaterials ) : new THREE.LineSegments( buffergeometry, createdMaterials ) );
+            //
+            // } else {
+            //
+            //     buffergeometry.computeFaceNormals();
+            //     buffergeometry.computeVertexNormals();
+            //
+            //     mesh = ( ! isLine ? new THREE.Mesh( buffergeometry, createdMaterials[ 0 ] ) : new THREE.LineSegments( buffergeometry, createdMaterials[ 0 ] ) );
+            // }
+            //
             // mesh.name = object.name;
             //
             // container.add( mesh );
+
+            // buffergeometry.computeFaceNormals();
+            // buffergeometry.computeVertexNormals();
 
         }
 
@@ -754,6 +760,3 @@ THREE.OBJLoader.prototype = {
     }
 
 };
-
-
-
