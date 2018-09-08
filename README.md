@@ -20,3 +20,9 @@ terrain dojo
 **[terrain dojo page](https://tyrealgray.github.io/TyrealDojo/terrain/terrain.html)**
 
 **[terrain unit test page](https://tyrealgray.github.io/TyrealDojo/terrain/test-terrain.html)**
+
+AR dojo
+
+**[ar dojo page](https://tyrealgray.github.io/TyrealDojo/ar/)**
+
+**[ar marker](https://github.com/TyrealGray/TyrealDojo/blob/gh-pages/ar/data/marker.png)**
