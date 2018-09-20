@@ -26,3 +26,7 @@ AR dojo
 **[ar dojo page](https://tyrealgray.github.io/TyrealDojo/ar/)**
 
 **[ar marker](https://github.com/TyrealGray/TyrealDojo/blob/gh-pages/ar/data/marker.png)**
+
+Bleed dojo
+
+**[Bleed dojo page](https://tyrealgray.github.io/TyrealDojo/bleed/)**
