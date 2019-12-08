@@ -41,7 +41,7 @@ Where to Skiing
 
 **[Where to Skiing dojo detail](https://github.com/TyrealGray/TyrealDojo/blob/gh-pages/whereToSkiing/SkiingInSingapore.md)**
 
-**[Where to skiing dojo code](https://github.com/TyrealGray/TyrealDojo/tree/gh-pages/whereToSkiing)
+**[Where to skiing dojo code](https://github.com/TyrealGray/TyrealDojo/tree/gh-pages/whereToSkiing)**
 
 SEK Currency rate
 
