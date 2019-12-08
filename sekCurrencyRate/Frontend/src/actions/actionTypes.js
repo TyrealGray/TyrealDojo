@@ -1,0 +1,9 @@
+export const LOGIN = 'LOGIN';
+export const AUTHENTICATED = 'AUTHENTICATED';
+export const OPEN_MODAL = 'OPEN_MODAL';
+export const CLOSE_MODAL = 'CLOSE_MODAL';
+export const SEARCH_COUNTRY = 'SEARCH_COUNTRY';
+export const ADD_COUNTRY = 'ADD_COUNTRY';
+export const UPDATE_AMOUNT = 'UPDATE_AMOUNT';
+export const CONVERT_AMOUNT = 'CONVERT_AMOUNT';
+export const UPDATE_CONVERSION = 'UPDATE_CONVERSION';

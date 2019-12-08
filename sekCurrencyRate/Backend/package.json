@@ -1,0 +1,46 @@
+{
+  "name": "currencyquery",
+  "version": "1.0.0",
+  "description": "Currency query",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./src -d bin --copy-files",
+    "dev": "nodemon script/dev.js",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "tyreal",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^2.10.0",
+    "fastify-jwt": "^1.1.0",
+    "fastify-rate-limit": "^2.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "core-js": "^3.3.2",
+    "eslint": "^6.5.1",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.18.2"
+  },
+  "prettier": {
+    "useTabs": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "parser": "flow"
+  }
+}
