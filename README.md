@@ -5,6 +5,8 @@ You can find original topic in DOJO-xxxx if there is one
 
 mosaic dojo original files only contains mosaic.js and server.js
 
+**[mosaic dojo details](https://github.com/TyrealGray/TyrealDojo/blob/gh-pages/mosaic/DOJO%20-%20mosaic)**
+
 **[mosaic dojo page](https://tyrealgray.github.io/TyrealDojo/mosaic/mosaic.html)**
 
 **[mosaic unit test page](https://tyrealgray.github.io/TyrealDojo/mosaic/test-mosaic.html)**
@@ -34,3 +36,9 @@ Bleed dojo
 360 image dojo
 
 **[360 image dojo page](https://tyrealgray.github.io/TyrealDojo/360/)**
+
+Where to Skiing
+
+**[Where to Skiing dojo detail](https://github.com/TyrealGray/TyrealDojo/blob/gh-pages/whereToSkiing/SkiingInSingapore.md)**
+
+**[Where to skiing dojo code](https://github.com/TyrealGray/TyrealDojo/tree/gh-pages/whereToSkiing)
